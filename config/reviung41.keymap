@@ -92,7 +92,5 @@
                                 &trans      &mo 3       &kp BSPC        &trans      &trans
                         >;
                 };
-
-               
-        
+	};
 };
