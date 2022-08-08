@@ -70,14 +70,14 @@
 
                 lower_layer {
 // ----------------------------------------------------------------------------------
-// |    |  !  |  @  |  #  |  $  |  %  |   |  ^    |   &   |    *    |    (    |  )     |    DEL    |
-// |    |  _  |  +  |  {  |  }  | "|" |   |	  |	  |	    |	      |  `     |     ~     |
-// |    | ESC | GUI | ALT | CAPS|  "  |   |RGB TOG|RGB EFF|RGB BRI+ | RGB BRI-|RGB HUE+| RGB HUE-  |
+// |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |    DEL    |
+// |    |  _  |  +  |  {  |  }  | "|" |   |     |     |  UP |     |  `  |     ~     |
+// |    | ESC | GUI | ALT | CAPS|  "  |   |     | LFT | DWN | RGT | PRSC| SHFT(RET) |
 //                       |     |     | RET | ADJ |     |
                         bindings = <
-   &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET        &kp AMPS        &kp N8            &kp LPAR        &kp RPAR        &kp DEL
-   &trans &kp MINUS &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &none            &none  	  &none  	    &none  	    &kp GRAVE       &kp TILDE
-   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ar RGB_BRI  &rgb_ar RGB_BRD &rgb_ar RGB_HUI &rgb_ar RGB_HUD
+   &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp N8    &kp LPAR  &kp RPAR  &kp DEL
+   &trans &kp MINUS &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &none     &none    &kp UP    &none     &kp GRAVE &kp TILDE
+   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &none     &kp LEFT  &kp DOWN &kp RIGHT &kp PSCRN &mt RSHFT RET
                                  &trans      &trans       &kp RET        &mo 3       &trans
                         >;
                 };
@@ -89,12 +89,12 @@
 // |    | ESC | GUI | ALT | CAPS|  "  |   | F1  | F12  | LFT | DWN | RGT | RESET |
 //                       |     | ADJ | BKSP |    |     |
                         bindings = <
-   &trans &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6        &kp N7        &kp N8    	  &kp N9    &kp N0     &kp DEL
-   &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp UP    &none      &bt BT_CLR
-   &trans &kp ESC   &kp LGUI  &kp RALT  &kp CLCK  &kp DQT       &kp F1        &kp F12       &kp LEFT      &kp DOWN  &kp RIGHT  &reset
+   &trans &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
+   &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &kp F1    &kp F2    &kp UP    &kp F4    &kp F5    &kp F6
+   &trans &kp ESC   &kp LGUI  &kp RALT  &kp CLCK  &kp DQT       &kp F7    &kp LEFT  &kp DOWN  &kp RIGHT &kp F11   &kp F12
                                 &trans      &mo 3       &kp BSPC        &trans      &trans
                         >;
-                };
+                
 
                 
                 };
